@@ -1,5 +1,11 @@
+
 .App {
-  text-align: center;
+  text-align:center;
+}
+
+.centerView
+{
+  text-align:center;
 }
 
 .App-logo {
