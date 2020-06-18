@@ -37,6 +37,7 @@ function MyToolbar() {
                     </Typography>
                     <Button color="inherit" href="/">Hum</Button>
                     <Button color="inherit" href="/game">Game</Button>
+                    <Button color="inherit" href="/draw">Draw</Button>
                 </Toolbar>
             </AppBar>
         </div>

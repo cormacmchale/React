@@ -1,21 +1,35 @@
 import React from 'react';
 import './App.css';
 
+//alert function
+function alertPress()
+{
+  console.log("Button pressed");
+}
+
+//class that returns a buttons
+//added alert to press
 class Square extends React.Component {
+  var
   render() {
     return (
-      <button className="square">
+      <button className="square" onClick={alertPress}>
         {/* TODO */}
       </button>
     );
   }
+
 }
+
 class Board extends React.Component {
   renderSquare(i) {
-    return <Square />;
+    //console.log(i);
+    return <Square/>;
 }
+
   render() {
     const status = 'Next player: X';
+
     return (
       <div>
         <div className="status">{status}</div>
@@ -38,6 +52,7 @@ class Board extends React.Component {
     );
   }
 }
+
 class Game extends React.Component {
   render() {
     return (
@@ -53,4 +68,5 @@ class Game extends React.Component {
     );
   }
 }
+
 export default Game;
